@@ -19,6 +19,10 @@ public class LinkedListMain {
         linkedList3.add(45);
         linkedList3.add(70);
         linkedList3.show();
-
+        System.out.println("Deletion operation");
+        linkedList3.show();
+       linkedList3.deleteFirstElement(56);
+        System.out.println("After deletion of element");
+       linkedList3.show();
     }
 }
