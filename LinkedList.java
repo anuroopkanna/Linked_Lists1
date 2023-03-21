@@ -34,9 +34,30 @@ public class LinkedList <T>{
     public void deleteFirstElement(T deletedelement)
     {
     deletedelement= head.data;
+        if (head==tail) {
+            head=null;
+        }
     if (head!=null){
         head=head.next;
     }
         System.out.println("Deleted element is "+deletedelement);
+    }
+    public void deleteLastElement(T deletedElement){
+        Node<T> temp=head;
+        deletedElement= tail.data;
+        if (head==null){
+            System.out.println("list is empty");
+        }
+        if (head == tail) {
+            head = null;
+        } else {
+            while (temp.next != tail) {
+                temp = temp.next;
+            }
+            temp.next = null;
+            tail = temp;
+            System.out.println();
+            System.out.println("Deleted element is " + deletedElement);
+        }
     }
 }

@@ -22,7 +22,19 @@ public class LinkedListMain {
         System.out.println("Deletion operation");
         linkedList3.show();
        linkedList3.deleteFirstElement(56);
-        System.out.println("After deletion of element");
+        System.out.println("After deletion of 1st element");
        linkedList3.show();
+        LinkedList<Integer> linkedList4 = new LinkedList<>();
+        linkedList4.add(56);
+        linkedList4.add(44);
+        linkedList4.add(30);
+        linkedList4.add(45);
+        linkedList4.add(70);
+        linkedList4.show();
+        System.out.println("Deletion operation");
+        linkedList4.show();
+        linkedList4.deleteLastElement(70);
+        System.out.println("After deletion of 2nd element");
+        linkedList4.show();
     }
 }
