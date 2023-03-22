@@ -36,5 +36,12 @@ public class LinkedListMain {
         linkedList4.deleteLastElement(70);
         System.out.println("After deletion of 2nd element");
         linkedList4.show();
+        LinkedList<Integer> linkedList5 = new LinkedList<>();
+        linkedList5.add(56);
+        linkedList5.add(30);
+        linkedList5.add(45);
+        linkedList5.add(70);
+        linkedList5.show();
+        linkedList5.search(45);
     }
 }

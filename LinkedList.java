@@ -60,4 +60,19 @@ public class LinkedList <T>{
             System.out.println("Deleted element is " + deletedElement);
         }
     }
+    public void search(T  search)
+    {
+        Node<T> temp =head;
+        boolean check=false;
+        while (temp!=null){
+            if (temp.data==search){
+                check=true;
+            }
+            temp=temp.next;
+        }
+        if (check)
+            System.out.println("Element found");
+        else
+            System.out.println("Element Not Found");
+    }
 }
