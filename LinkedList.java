@@ -91,4 +91,34 @@ public class LinkedList <T>{
             temp2=temp2.next;
         }
     }
+    public void getSize(){
+        Node<T> temp = head;
+        int count=0;
+        while(temp!=null){
+            temp=temp.next;
+            count++;
+        }
+        System.out.println("Size of the list is " +count);
+    }
+
+    public void deleteAnElement(T delete)
+    {
+        Node<T> temp = head;
+        Node<T> temp2=head;
+        Node<T> temp3 =head;
+        int count=0;
+        while (temp!=null & temp2!=null & temp3!=null){
+            count++;
+            if (count>2){
+                temp3=temp3.next;
+            }
+            if (temp.data==delete){
+                temp2=temp2.next;
+                temp3.next=temp2;
+                System.out.println("Elements deleted successfully!!");
+            }
+            temp=temp.next;
+            temp2=temp2.next;
+        }
+    }
 }

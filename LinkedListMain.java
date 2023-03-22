@@ -60,5 +60,14 @@ public class LinkedListMain {
         System.out.println("**After insert**");
         linkedList6.insertAnyWhere(55,60);
         linkedList6.show();
+        LinkedList<Integer> linkedList7 = new LinkedList<>();
+        linkedList7.add(56);
+        linkedList7.add(30);
+        linkedList7.add(45);
+        linkedList7.add(70);
+        linkedList7.show();
+        linkedList7.deleteAnElement(45);
+        System.out.println("-------------");
+        linkedList7.getSize();
     }
 }
