@@ -75,4 +75,20 @@ public class LinkedList <T>{
         else
             System.out.println("Element Not Found");
     }
+    public void insertAnyWhere(T insert, T search)
+    {
+        Node<T> newNode =new Node<>(insert);
+        Node<T> temp = head;
+        Node<T> temp2 = head;
+        while (temp!=null & temp2!=null){
+            if (temp.data==search){
+                temp2=temp2.next;
+                temp.next=newNode;
+                newNode.next=temp2;
+                System.out.println("Data inserted successfully!!");
+            }
+            temp=temp.next;
+            temp2=temp2.next;
+        }
+    }
 }

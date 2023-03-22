@@ -7,23 +7,27 @@ public class LinkedListMain {
         linkedList1.push(70);
         linkedList1.push(30);
         linkedList1.push(56);
+        System.out.println("---------------------");
         LinkedList<Integer> linkedList2 = new LinkedList<>();
         linkedList2.add(56);
         linkedList2.add(30);
         linkedList2.add(70);
         linkedList1.show();
         linkedList2.show();
+        System.out.println("---------------------");
         LinkedList<Integer> linkedList3 = new LinkedList<>();
         linkedList3.add(56);
         linkedList3.add(30);
         linkedList3.add(45);
         linkedList3.add(70);
         linkedList3.show();
+        System.out.println("---------------------");
         System.out.println("Deletion operation");
         linkedList3.show();
        linkedList3.deleteFirstElement(56);
         System.out.println("After deletion of 1st element");
        linkedList3.show();
+        System.out.println("---------------------");
         LinkedList<Integer> linkedList4 = new LinkedList<>();
         linkedList4.add(56);
         linkedList4.add(44);
@@ -36,6 +40,7 @@ public class LinkedListMain {
         linkedList4.deleteLastElement(70);
         System.out.println("After deletion of 2nd element");
         linkedList4.show();
+        System.out.println("---------------------");
         LinkedList<Integer> linkedList5 = new LinkedList<>();
         linkedList5.add(56);
         linkedList5.add(30);
@@ -43,5 +48,17 @@ public class LinkedListMain {
         linkedList5.add(70);
         linkedList5.show();
         linkedList5.search(45);
+        System.out.println("---------------------");
+        LinkedList<Integer> linkedList6 = new LinkedList<>();
+        linkedList6.add(56);
+        linkedList6.add(30);
+        linkedList6.add(45);
+        linkedList6.add(70);
+        System.out.println("**Before insert**");
+        linkedList6.show();
+        System.out.println(" ");
+        System.out.println("**After insert**");
+        linkedList6.insertAnyWhere(55,60);
+        linkedList6.show();
     }
 }
