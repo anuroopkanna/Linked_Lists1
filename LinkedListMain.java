@@ -69,5 +69,18 @@ public class LinkedListMain {
         linkedList7.deleteAnElement(45);
         System.out.println("-------------");
         linkedList7.getSize();
+        System.out.println("--------------");
+        SortedLinkedList<Integer> sortingLinkedList=new SortedLinkedList<>();
+        sortingLinkedList.add(15);
+        sortingLinkedList.add(26);
+        sortingLinkedList.add(5);
+        sortingLinkedList.add(35);
+        sortingLinkedList.add(4);
+        System.out.println("before sort \n");
+        sortingLinkedList.show();
+        System.out.println("\n");
+        System.out.println(" after sort ");
+        sortingLinkedList.sort();
+        sortingLinkedList.show();
     }
 }
